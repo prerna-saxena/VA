@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+
+.navbar {
+  width: 100%;
+  background-color: #555;
+  overflow: auto;
+}
+
+.navbar a {
+  float: left;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background-color: #000;
+}
+
+.active {
+  background-color: #04AA6D;
+}
+
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+  }
+}
+</style>
+<body>
+
+<h2></h2>
+<p></p>
+
+<div class="navbar">
+  <a class="active" href="#"><i class="fa fa-fw fa-home"></i> Home</a> 
+  <a href="https://vedsar.com/technology-services/"><i class="fa fa-fw"></i> Use Cases</a> 
+  <a href="https://vedsar.com/technology-services/about"><i class="fa fa-fw"></i> Article </a>
+  <a class="active" href="#"><i class="fa fa-fw"></i> About Us</a> 
+
+  <a href="#"><i class="fa fa-fw "></i> Artist</a>
+  <a href="#"><i class="fa fa-fw"></i> Guides</a> 
+  <a href="https://web.whatsapp.com/"><i class="fa fa-fw "></i> Contact Us</a>
+  <a href="https://vedsar.com/"><i class="fa fa-fw "></i> Visit Us..</a>
+
+</div>
+
+<!DOCTYPE html>
+<html>
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* Add a background color when the inputs get focus */
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+}
+
+/* Add padding to container elements */
+.container {
+  padding: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: #474e5d;
+  padding-top: 50px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* Style the horizontal ruler */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+ 
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 35px;
+  top: 15px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #f1f1f1;
+}
+
+.close:hover,
+.close:focus {
+  color: #f44336;
+  cursor: pointer;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+     width: 100%;
+  }
+}
+</style>
+<body>
+
+  
+
+
+<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;" text-align="right">Sign Up</button>
+
+<div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+  <form class="modal-content" action="/action_page.php">
+    <div class="container">
+      <h1 textalign ="right "><b>Sign Up</b></h1>
+      <p>Please fill in this form to create an account.</p>
+      <hr>
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+
+      <label for="psw-repeat"><b>Repeat Password</b></label>
+      <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+      
+      <label>
+        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+      </label>
+
+      <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+      <div class="clearfix">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+        
+        <button type="submit" class="signupbtn">Sign Up</button>
+      </div>
+    </div>
+  </form>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+<h1>Art Fusion : where Digital <br><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTm4IGzoPu0PgVC47sxF5pYjPPLMK8TTWc4JQ&s" alt="Trulli" width="100" height="33"><h1>Artistry meets</h1><h3> Experience with the versatility of Digital Art and<h1>Virtual Reality </h1> </h3>
+<h3>Its Ability to create a wide range of Styles  </h3>        
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.container {
+  position: relative;
+  text-align: center;
+  color: rgb(21, 19, 19);
+}
+
+.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+  color: rgb(21, 19, 19);
+
+}
+
+.top-left {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+  color: rgb(21, 19, 19);
+
+}
+
+.top-right {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+  color: rgb(21, 19, 19);
+
+}
+
+.bottom-right {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+  color: rgb(21, 19, 19);
+
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(21, 19, 19);
+
+}
+</style>
+</head>
+<body>
+
+
+<div class="container">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTm4IGzoPu0PgVC47sxF5pYjPPLMK8TTWc4JQ&s" alt="Trulli" width="500" height="333">
+  <div class="bottom-left"></div>
+  <div class="top-left"></div>
+  <div class="top-right"></div>
+  <div class="bottom-right"></div>
+  <div class="centered"><b><h1>Cases Worth Reading</h1></b><br><B>EXPLORING THE BOUNDLESS CREATIVITY<BR> IMPACT OF DIGITAL ART</B> </div>
+</div>
+
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.arrow {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+
+.up {
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+}
+
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+</style>
+</head>
+<body>
+
+
+<style>
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+  </style>  </head>
+  <body>
+  
+  <h2></h2>
+  <p style="text-align: center;"><b><strong>
+    
+    <ul>
+      <li><centre>Features</li><li>Whats New</centre></li>
+    </ul></strong></b></p>;
+  
+  
+<label class="switch">
+  <input type="checkbox" checked>
+  <span class="slider round"></span>
+</label>
+<hr>
+<B>Meet our Artists </B>
+<b> <marquee><h1>JOIN OUR COMMUNITY !</h1></marquee></b>
+
+<p>
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKni1sjgvtL6sHuH9nyUJhk7Y_Przzh1-iRQ&s" width="500" height="333"> 
+
+</p>
+<strong><b>Connect with other 
+Digital Art Enthusiasts! </strong>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<hr>
+
+<img src=" data:image/png;base64,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"
+width="500"height="200">
+
+
+<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAaVBMVEX///8BAQE9PT1AQECYmJjV1dX8/PwEBARdXV1YWFj5+flbW1tUVFRISEj09PSamprm5uYNDQ3c3NwvLy+mpqZNTU3Dw8OSkpIxMTHs7OwnJycWFhYcHBzOzs6/v7+3t7eHh4d5eXlvb2+hjBobAAADRUlEQVR4nO3c3XLaMBBAYS0QhAMpCSShSfr//g9ZyVCCg+3MVGu87Jzvthf1GW0AGeEQAAAAAAAAAAAAAAAAAAAAAAAAAOD/PX+Zj30JA9vdjX0FQ5vJyvkizkRWt64bU6HceS+MMrkd+zIGlNdQZJpfUZ2u5L4wJY59IYPZF0bZuh3UwxqKbL2u4rFQvr6MfS3DOBZGeX1x+WLzvoYiby4TTwvl7d5h4mlhlG8OExtrmCLv3b3zfygU2TgvjPJQJzqqPFvDehXnvgvlZuyLUtVWKN/TlLpZxdbClBjcDGp7YZ049qUp6SiUZzeL2FUoP0LwsWXsLEyJPlaxuzAPqoe/xp5C+ekhsK8w5sTrt04hfauoP6ib7eSSpq+9hUMM6k3f/zeE2FMYH+TRQeEn/5gTVd82Ll74qUflQbVWmAZ17bswm6kmWiyUneZHVIOF6dV2p7iKBguzX3r3bowW1omeC2NOVGKzMPutdO/GbGGsEz0XJn8U+mwX6iSaLlRJNF0YZeG8MFkUv/UbL4z5nJ/rwn2i68LkaT4vibyCQrkrGtQrKIwyeXFdmLaLVckZuCsolKroG2L7hbIs+w7cemH6WFO4wTBeGGXp/DONVKF0l2i6MNaBhSwXxvwiU7zNt1yYX2TK72PYLVQZUcuFOdD3vbbi90HjhVHvR3w2C1NgmCt9/2SzUOMOlOXC9D7o+/tDSSOq+BWpxcJlvjC1r0jNFabtku7vhM0V6o6ovcL8NhF0D9TYKsw7+qs/9dWvmqufhd5sJ9NL6jmbGA8jeuXW3euXv0sb5IxwPgp4Mb0naFU2vKObdRRGrQ3v6LrOedcb3rEvTkXnSfali4P6oaMwlt/ZtqO9UKpbJyvYNaWVlxENbYWuRjS0Fqbtkp8VbJ3SytEPSMP5r9VVjj2ZcvZ7fF8jGs6ntFL+hcz4Gk/+cPNZ9FTz2SY+dhNNjSlduhvRcPoUJZcjGhrPiXKzm2h6n9KFxxENxyfS1Ue5fPr3zL2VzxENxyn1OqJh/3TP+qOaW7PDMRKnCxj2U7rwtV36IBV6HtGQ7+qXnfi1b/fkekRDfib72FcwPNcLWPNfCAAAAAAAAAAAAAAAAAAAAAAAgKH9BUG5Mlo+6vAJAAAAAElFTkSuQmCC"
+width="100"height="100">
+
+<br><hr>
+<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANcAAACUCAMAAAA3b0xFAAAAYFBMVEX///8AAADp6eng4OANDQ2qqqqampr4+PhKSkpmZma4uLjMzMxRUVHl5eU1NTUpKSnV1dV0dHTw8PDFxcVvb2+CgoI/Pz+QkJAvLy8aGhqhoaFXV1exsbFdXV16enogICCb2IqyAAAEm0lEQVR4nO2c2bKiMBBAkS1sCrKqgP7/X86QBTAEEcyVtqrPy8y9o1YfknQ6DY5hIAiCIAiCIAiCIAiCIAiCIAiCIAiCIL8CMS0r3TsI7VjuvY0i/+5m5t6h6KQ6HThxWVfh3uFo4niQuRSBmZK94/qQ5Drx6vCKJjz+sNvRU2pR6rsbWHsHuBF3XqvjWtZF84PJxBLTLjCtJi9jW23nOxb5qUl5Y4EX/MdjU/ieesFdcyf8nS2upDHno7EgVnAravWsLHO3SX5i3Fi8mfRbYiZBUSrV7LL1b8kusa4gYcOgTHqEZEV5VS44+xG5oMeNZcPzfIhpVvnRRT1yBdxhY+uoev0iM3Mq/6FSc4DmEUJHwm6WX2kmmatIJneYYgkdhdOb84mkoStXJwXIVcZ2r2hVbImTR6chmzh/Fdsn3Glo+dq3kaSpcrF7Axww4tPI3lheU9KML7eb7qg+Jakids1P3tu0VbcW2RBZbK3V+1pIkEBd4S4TB2LmNfQj1Jv6TpjnjVYdIrmndJe4AOobmP4HWv8TDRejbZFYLi535P6RljjWEGjj5Yj47LWIN9IUmtG0Ux731hGYLQsuqpy1VLze8LuZyIpmOPkw46tky4W2+DXp0j3LPXfd4W2GVU9x140J3TV0K4k3RJx+2Dft6n8BYdf5f52Qrk2LXb/AFZkjZMcyMM0qXj2FBqlWah0OrmEEwrChf7H31unpvV61RGeoTeFlGOyq+Hvr9PReVizCjRUKSk7H3otPYjjnlImXkxLivFcujrws1hkAs3vJXjarF5LTjMqcV0j/jOE0AiQv0bRZaNRPvNhu8aKV9W0kL1G2hu8sssGLfwqgU6XkJcrWtybiyIv9AlAxL3kF/NeB+nbD4fAYtQ57rzO7y1kCao1KXi1bIWTmpGkXQVD0yr1Xwc4EOZy0Mcnz7DBVzQwX3Z/6nDJ4sQ9Z6BR/lcn+VbuB483sX/wEmU/m4WWwBoKi3pjlzN+TepLXhV6HE5yz8iovv18+ieTFiAAtrxVe4xaaq/Ja3Sn+S2a8FHlj3Blk+VLycneTUKD08k1x8Bh4XjxWNPUCtHspvSJ2mM/GJcdVPuB37SfJ6/vBv2DidXXFWT4ZGgO2O6lob7JX+eXIXyN7taPZlBYiZlWhXktekHZl2evRPAvwB1U81TvN6+XJC9Lu9ex1LSbtpKx7bqNUH6vC5/GCc/bqGLzsOlD8e5KffMtQxkxuY69192//nKEf5ah7f2kyW0akZOQFa3kNXtsYvFSDvSO6vB6gdmV9Xi2YDjZDlxe0R1J0eQFqRVE0eUG6r0zR5OXB6WAzNHnBuZHC0eRVLL/0u2jygra8NHnZkFo2FD1esdaYdKDH67z8yi+jxwtY0Wv0dxi2tqD5gRpYcdjBWpzetvKOsK9BzByod4U/R7TtWMgbO5BuOAgs/s2TOjPXkkVAiyjK7fApjqFugOyLOfM1qLfxwW3KDGs59Fc8ID2q/IS19WnsDhvk4uogBinUX35a5gLt/C+RVOc2Wkt7r8DOwZ7u/zpYiQl7rBAEQRAEQRAEQRAEQRAEQRAEQRAEQZCOf3a7OfGXrHIUAAAAAElFTkSuQmCC"
+width="100"height="50">
+<b>Art Events </b><br>
+<b>Information about Digital Art Exhibitions </b>
+
+
+<br><hr>
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHB6Tu_jYfNVdP4_4kwZyRgzjQYQq4P3eeLA&s"
+width="100"height="100">
+<b>Our Collections </b><br>
+<b>Discover Our Collection of Digital Arts  </b>
+
+
+
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+}
+
+.top-left {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+}
+
+.top-right {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+}
+
+.bottom-right {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+</style>
+</head>
+<body>
+
+
+<div class="container">
+  <img src="data:image/jpeg;base64,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" alt="Snow" width="700" height="300">
+  <div class="bottom-left"></div>
+  <div class="top-left"></div>
+  <div class="top-right"></div>
+  <div class="bottom-right"></div>
+  <div class="centered"><i><br>Tutorial and Resources </br></i><h1>Art Techniques</h1>  <br> </div>
+</div>
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+}
+
+.top-left {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+}
+
+.top-right {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+}
+
+.bottom-right {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+</style>
+</head>
+<body>
+
+
+<div class="container">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScL3beChEGH-hXhjbp2on3WU2q-6r4802ldw&s" alt="Snow" width="700" height="300">
+  <div class="bottom-left"></div>
+  <div class="top-left"></div>
+  <div class="top-right"></div>
+  <div class="bottom-right"></div>
+  <div class="centered"><u><i><br>JOIN OUR COMMUNITY !</br></i></u> <br> Connect With Other Digital <br>Art Enthusiasts </div>
+</div>
+<hr>
+<hr>
+<br>
+<br>
+
+</body>
+</html> 
+
+
